@@ -1,1 +1,12 @@
-{}
+{
+	"frameworks": {
+		"dnxcore50": {
+			"dependencies": {
+				"System.Runtime": "4.0.21-*",
+				"System.Linq": "4.0.1-*",
+				"System.Linq.Expressions": "4.0.11-*",
+				"System.Linq.Queryable": "4.0.1-*"
+			}
+		}
+	}
+}
