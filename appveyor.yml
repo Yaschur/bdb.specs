@@ -14,10 +14,10 @@ install:
   - ps: |
       $joined = (GitVersion) -join "`n"
       $versionInfo = ($joined | ConvertFrom-Json).NuGetVersionV2
-      Update-AppveyorBuild -Version $versionInfo
 	  $json = Get-Content -Raw -Path "Bdb.Specs\project.json" | ConvertFrom-Json
 	  $json.version = $versionInfo
 	  $json | ConvertTo-Json -depth 999 | Out-File "Bdb.Specs\project.json"
+	  Update-AppveyorBuild -Version $versionInfo
 
 before_build:
   - cmd: dnvm update-self
