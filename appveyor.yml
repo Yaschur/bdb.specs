@@ -15,6 +15,9 @@ install:
       $joined = (GitVersion) -join "`n"
       $versionInfo = ($joined | ConvertFrom-Json).NuGetVersionV2
       Update-AppveyorBuild -Version $versionInfo
+	  $json = Get-Content -Raw -Path "Bdb.Specs\project.json" | ConvertFrom-Json
+	  $json.version = $versionInfo
+	  $json | ConvertTo-Json -depth 999 | Out-File "Bdb.Specs\project.json"
 
 before_build:
   - cmd: dnvm update-self
@@ -23,6 +26,8 @@ before_build:
 
 build_script:
   - cmd: dnu pack Bdb.Specs --configuration Release --out artifacts
+
+test: off
 
 artifacts:
   - path: artifacts\**\*.nupkg
