@@ -1,4 +1,6 @@
 {
+	"version": "0.0.0",
+	"authors": [ "Igor Trishin" ],	
 	"frameworks": {
 		"dnxcore50": {
 			"dependencies": {
