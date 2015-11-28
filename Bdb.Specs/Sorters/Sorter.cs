@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace bdb.infra.specs.Sorters
+namespace Bdb.Specs.Sorters
 {
 	public class Sorter<TEntity>
 	{

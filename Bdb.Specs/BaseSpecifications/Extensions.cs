@@ -1,5 +1,5 @@
 ﻿
-namespace bdb.infra.specs.Specifications.BaseSpecifications
+namespace Bdb.Specs.Specifications.BaseSpecifications
 {
 	public static class Extensions
 	{

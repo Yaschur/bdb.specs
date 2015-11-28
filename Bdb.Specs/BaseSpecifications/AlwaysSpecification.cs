@@ -1,6 +1,6 @@
-﻿using bdb.infra.specs.Specifications.ESpecifications;
+﻿using Bdb.Specs.Specifications.ESpecifications;
 
-namespace bdb.infra.specs.Specifications.BaseSpecifications
+namespace Bdb.Specs.Specifications.BaseSpecifications
 {
 	public class AlwaysSpecification<TEntity> : StraightESpecification<TEntity>
 	{

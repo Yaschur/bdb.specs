@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace bdb.infra.specs
+namespace Bdb.Specs
 {
 	internal abstract class Injecter<TEntity, TProperty>
 	{

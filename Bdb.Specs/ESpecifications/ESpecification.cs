@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Linq;
 using System.Linq.Expressions;
 
-namespace bdb.infra.specs.Specifications.ESpecifications
+namespace Bdb.Specs.Specifications.ESpecifications
 {
-	public abstract class ESpecification<T> : ISpecification<T>
+    public abstract class ESpecification<T> : ISpecification<T>
 	{
 		public ESpecification()
 		{

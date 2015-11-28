@@ -1,6 +1,6 @@
-﻿using bdb.infra.specs.Specifications.ESpecifications;
+﻿using Bdb.Specs.Specifications.ESpecifications;
 
-namespace nqt.roots.infra.Specifications.BaseSpecifications
+namespace Bdb.Specs.Specifications.BaseSpecifications
 {
 	public class NeverSpecification<TEntity> : StraightESpecification<TEntity>
 	{

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace bdb.infra.specs.Specifications.ESpecifications
+namespace Bdb.Specs.Specifications.ESpecifications
 {
 	public abstract class LeafESpecification<T> : ESpecification<T>
 	{

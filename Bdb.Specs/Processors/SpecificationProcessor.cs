@@ -1,7 +1,7 @@
-﻿using bdb.infra.specs.Specifications.ESpecifications;
+﻿using Bdb.Specs.Specifications.ESpecifications;
 using System.Collections.Generic;
 
-namespace bdb.infra.specs.Specifications.Processors
+namespace Bdb.Specs.specs.Specifications.Processors
 {
 	public class SpecificationProcessor
 	{

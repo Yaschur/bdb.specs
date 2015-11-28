@@ -1,8 +1,8 @@
-﻿using bdb.infra.specs.Specifications.ESpecifications;
+﻿using Bdb.Specs.Specifications.ESpecifications;
 using System;
 using System.Linq.Expressions;
 
-namespace bdb.infra.specs.Extensions
+namespace Bdb.Specs.Extensions
 {
 	public static class SpecificationToExpressionExtension
 	{

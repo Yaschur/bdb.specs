@@ -1,4 +1,4 @@
-﻿namespace bdb.infra.specs
+﻿namespace Bdb.Specs
 {
 	public interface ISpecification
 	{
