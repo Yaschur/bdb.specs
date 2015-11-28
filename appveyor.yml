@@ -5,10 +5,7 @@ os: Visual Studio 2015
 branches:
   only:
   - develop
-
-nuget:
-  account_feed: true
-  disable_publish_on_pr: true
+  - master
 
 install:
   - ps: |
@@ -31,3 +28,12 @@ test: off
 
 artifacts:
   - path: artifacts\**\*.nupkg
+
+deploy:
+  provider: NuGet
+  server: https://www.myget.org/F/boodaba/api/v2/package
+  api_key:
+    secure: qyfJ610MxvoFG6yZTtu9okDIHEokqk603wX4Hw41pnLLu5zd02oPmAZXj71Rwb/L
+  skip_symbols: false
+  symbol_server:
+    secure: hEkcKLtbQT5DcVgUUOjtFC4Y1EsaS3FsZRU3Nu8PxMAivDWFg6XBEMlO4GCaO9qMhIJ983StftbGMjGB8zvgPUfbSWAuTINhWZrb/VkKxl6ePnFZ+94+DzAsLouxuy6N
